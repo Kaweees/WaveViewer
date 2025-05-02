@@ -4,6 +4,10 @@ pkgs.mkShell {
   # Native build inputs (tools needed to run on your machine)
   nativeBuildInputs = [
     pkgs.pkg-config # Helps find libraries like GLFW
+    pkgs.bison # Newer version of bison for ngspice
+    pkgs.autoconf # Needed for ngspice autogen.sh
+    pkgs.automake # Needed for ngspice autogen.sh
+    pkgs.libtool # Needed for ngspice autogen.sh
   ];
 
   # Build inputs (libraries and tools needed for the project)
@@ -11,6 +15,9 @@ pkgs.mkShell {
     pkgs.clang-tools
     pkgs.emscripten # C/C++ to WebAssembly compiler and SDK
     pkgs.glfw # Windowing and input library
+    pkgs.autoconf
+    pkgs.automake
+    pkgs.libtool
     # OpenGL/GLES headers are typically provided by emscripten's environment
   ];
 
