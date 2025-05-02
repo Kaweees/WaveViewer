@@ -8,7 +8,7 @@ pkgs.mkShell {
 
   # Build inputs (libraries and tools needed for the project)
   buildInputs = [
-    pkgs.clang-tools # 
+    pkgs.clang-tools
     pkgs.emscripten # C/C++ to WebAssembly compiler and SDK
     pkgs.glfw # Windowing and input library
     # OpenGL/GLES headers are typically provided by emscripten's environment

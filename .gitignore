@@ -51,5 +51,21 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Build artifacts
+# CMake files
+CMakeCache.txt
+cmake_install.cmake
+CPackConfig.cmake
+_deps/
+Makefile
+obj/
+CMakeFiles/
+CPackSourceConfig.cmake
+CMakeSettings.json
+CTestTestfile.cmake
+*_include.cmake
+*_tests.cmake
+
+# Build files
+.cache/
 target/
+build/
